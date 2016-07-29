@@ -178,6 +178,7 @@ p
 	z-index: 10
 	min-height: 700px
 	padding-top: 29px
+	padding-bottom: 40px
 .wrapp_head
 	// position: relative
 	// background-image: url(../img/header_top.jpg)
@@ -548,6 +549,112 @@ section
 				font-family: "MavenProRegular"
 				padding-top: 11px
 
+#benefits
+	width: 100%
+	// min-height: 300px
 
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s13.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: center center
+	transform: skewY(-3deg)
+	z-index: 10
+	padding: 100px 0 130px
+	overflow: hidden
+	.fixed_deg
+		h2
+			font-family: "Exo2ExtraLight"
+			color: $dark_blue
+			position: relative
+			padding-bottom: 10px
+			margin-top: 0
+			&:before
+				content: ""
+				width: 27px
+				height: 1px
+				background-color: #ffbc5e
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+		p
+			font-size: em(22px)
+			font-family: "Exo2SemiBold"
+			color: #fff
+		span
+			font-size: em(18px)
+			font-family: "MavenProRegular"
+			color: #fff
+			display: block
+			padding-bottom: 70px
+		ul
+			width: 100%
+			height: auto
+			margin: 0 auto
+			padding-bottom: 70px
+			li
+				display: block
+				color: #fff
+				font-size: em(18px)
+				font-family: "MavenProRegular"
+
+		a
+			font-size: em(22px)
+			font-family: "MavenProBold"
+			text-decoration: none
+			text-transform: uppercase
+			color: #fff
+			position: relative
+			padding-top: 10px
+			display: inline-block
+			&:after
+				content: ""
+				width: 27px
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+			&:hover
+				text-decoration: underline
+	.row_items_benefits
+		.items_benefits
+			max-width: 370px
+			height: auto
+			padding-top: 45px
+			padding-bottom: 95px
+			padding-left: 70px
+			padding-right: 70px
+			border-radius: 5px
+			.circle_item
+				width: 74px
+				height: 74px
+				border-radius: 50%
+				background: rgba(0, 0, 0, 0.3)
+				display: inline-block
+				margin: 0 auto
+				margin-bottom: 15px
+				.fa
+					color: #fff
+					line-height: 74px
+					font-size: em(36px)
+
+	.row_items_benefits
+		margin-top: 40px
+		.items_benefits_left
+			background-color: #4769b0
+		.items_benefits_center
+			background-color: #38507e
+			// padding-top: 55px
+			// padding-bottom: 83px
+		.items_benefits_right
+			// padding-top: 65px
+			// padding-bottom: 70px
+			background-color: #3a4852
+		
+					
 
 @import "../css/media"

@@ -26,14 +26,12 @@
 	.logo{
 		padding: 20px 0 0;
 	}
-/*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 300%;
-		background-repeat: no-repeat;
-	}*/
+	#benefits .row_items_benefits .items_benefits{
+		margin: 0 auto 40px;
+	}
+	#benefits{
+		background-size: cover;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -63,14 +61,7 @@
 	.logo{
 		padding: 25px 0 10px;
 	}
-/*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 420%;
-		background-repeat: no-repeat;
-	}*/
+
 }
 @media only screen and (max-width : 410px){
 

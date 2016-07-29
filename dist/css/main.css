@@ -256,7 +256,8 @@ p {
   position: relative;
   z-index: 10;
   min-height: 700px;
-  padding-top: 29px; }
+  padding-top: 29px;
+  padding-bottom: 40px; }
 
 .wrapp_head {
   background-color: transparent;
@@ -614,6 +615,110 @@ section p {
         font-family: "MavenProRegular";
         padding-top: 11px; }
 
+#benefits {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-image: url(../img/bgc_s13.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  -webkit-transform: skewY(-3deg);
+      -ms-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: 10;
+  padding: 100px 0 130px;
+  overflow: hidden; }
+  #benefits .fixed_deg h2 {
+    font-family: "Exo2ExtraLight";
+    color: #364b74;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 0; }
+    #benefits .fixed_deg h2:before {
+      content: "";
+      width: 27px;
+      height: 1px;
+      background-color: #ffbc5e;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  #benefits .fixed_deg p {
+    font-size: 1.375em;
+    font-family: "Exo2SemiBold";
+    color: #fff; }
+  #benefits .fixed_deg span {
+    font-size: 1.125em;
+    font-family: "MavenProRegular";
+    color: #fff;
+    display: block;
+    padding-bottom: 70px; }
+  #benefits .fixed_deg ul {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 70px; }
+    #benefits .fixed_deg ul li {
+      display: block;
+      color: #fff;
+      font-size: 1.125em;
+      font-family: "MavenProRegular"; }
+  #benefits .fixed_deg a {
+    font-size: 1.375em;
+    font-family: "MavenProBold";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    padding-top: 10px;
+    display: inline-block; }
+    #benefits .fixed_deg a:after {
+      content: "";
+      width: 27px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    #benefits .fixed_deg a:hover {
+      text-decoration: underline; }
+  #benefits .row_items_benefits .items_benefits {
+    max-width: 370px;
+    height: auto;
+    padding-top: 45px;
+    padding-bottom: 95px;
+    padding-left: 70px;
+    padding-right: 70px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    #benefits .row_items_benefits .items_benefits .circle_item {
+      width: 74px;
+      height: 74px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+      #benefits .row_items_benefits .items_benefits .circle_item .fa {
+        color: #fff;
+        line-height: 74px;
+        font-size: 2.25em; }
+  #benefits .row_items_benefits {
+    margin-top: 40px; }
+    #benefits .row_items_benefits .items_benefits_left {
+      background-color: #4769b0; }
+    #benefits .row_items_benefits .items_benefits_center {
+      background-color: #38507e; }
+    #benefits .row_items_benefits .items_benefits_right {
+      background-color: #3a4852; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -640,14 +745,10 @@ section p {
 @media only screen and (max-width: 992px) {
   .logo {
     padding: 20px 0 0; }
-  /*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 300%;
-		background-repeat: no-repeat;
-	}*/ }
+  #benefits .row_items_benefits .items_benefits {
+    margin: 0 auto 40px; }
+  #benefits {
+    background-size: cover; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -668,15 +769,7 @@ section p {
     vertical-align: middle;
     line-height: 35px; }
   .logo {
-    padding: 25px 0 10px; }
-  /*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 420%;
-		background-repeat: no-repeat;
-	}*/ }
+    padding: 25px 0 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
