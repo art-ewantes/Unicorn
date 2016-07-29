@@ -1,0 +1,422 @@
+@import "bourbon/app/assets/stylesheets/bourbon"
+@import "../css/fonts"
+*
+	margin: 0
+	padding: 0
+
+$main_color: #5086f2
+$silver: #666666
+$dark_blue: #364b74
+$silver_dark: #383f42
+
+=animation-delay($animation)
+	-webkit-animation-delay: $animation
+	-o-animation-delay: $animation
+	-moz-animation-delay: $animation
+	animation-delay: $animation
+
+=border-radius($border-radius)
+	-webkit-border-radius: $border-radius
+	-o-border-radius: $border-radius
+	-moz-border-radius: $border-radius
+	border-radius: $border-radius
+
+=placeholder ($placeholder) 
+	-webkit-input-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-ms-input-placeholder: $placeholder
+
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition: $transition
+	-o-transition: $transition
+	transition: $transition
+
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+
++placeholder
+	// color: $main_color
+
+img
+	max-width: 100%
+	vertical-align: middle
+
+
+body
+	font-family: "Exo2Regular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	background-color: #fff
+	outline: none
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #52a028
+	outline: none
+	border: 1px solid #52a028
+body input:required:valid,
+body textarea:required:valid
+	color: #52a028
+	outline: none
+	border: 1px solid #52a028
+a
+	cursor: pointer
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:active
+		text-decoration: none
+
+
+
+	
+
+h2
+	font-size: em(48px)
+	font-family: "Exo2Light"
+h1
+	font-size: em(50px)
+	font-family: "Exo2ExtraLight"
+
+h3
+	font-size: em(32px)
+
+h4
+	font-style: em(30px)
+	font-family: "Exo2Bold"
+
+h5
+	font-size: em(24px)
+	font-family: "Exo2ExtraBoldItalic"
+
+p
+	font-size: em(18px)
+	font-family: "MavedProRegular"
+
+	
+
+
+.hidden
+	display: none
+
+
+
+
+#wrappper_
+	width: 100%
+	min-height: 7900px
+	margin-top: -30px
+	overflow: hidden
+	// background-image: url(../img/bg.jpg)
+	// background-position: center top
+	// background-size: 130%
+	// background-repeat: no-repeat
+	
+	
+
+
+.top_head
+	width: 100%
+	height: auto
+	background-image: url(../img/top_mnu.jpg)
+	background-position: right top
+	background-size: cover
+	background-repeat: no-repeat
+
+.head_contact
+	width: 100%
+	span
+		font-family: "Exo2Regular"
+		font-size: em(16px)
+	span, i
+		display: inline-block
+		vertical-align: middle
+		color: #d1e3ff
+		font-size: em(16px)
+		line-height: 38px
+.head_social
+	display: inline-block
+	float: right
+	overflow: hidden
+	.fa
+		vertical-align: middle
+		display: inline-block
+		font-size: em(18px)
+		padding-right: 13px
+		color: #bbd2ff
+		line-height: 38px
+		&:hover
+			color: #fafafa
+
+.main_head
+	transform: skewY(-3deg)
+	width: 100%
+	background:  url(../img/header_top2.jpg) no-repeat
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	z-index: 10
+	min-height: 700px
+	padding-top: 29px
+.wrapp_head
+	// position: relative
+	// background-image: url(../img/header_top.jpg)
+	// background-size: cover
+	// background-position: center center
+	// background-repeat: no-repeat
+	// max-height: 813px
+	// z-index: -19
+	// width: 100%
+	// background:  url(../img/header_top2.jpg) no-repeat
+	// background-position: center top
+	// background-repeat: no-repeat
+	// background-size: cover
+	// position: relative
+	// z-index: 10
+	// min-height: 700px
+	background-color: transparent
+	transform: skewY(3deg)
+	
+
+
+.overlay__
+	position: relative
+
+	>img
+		position: absolute
+		right: 0
+		top: 0
+		width: 100%
+		height: 205%
+		// transform: skewY(0)
+.logo
+	width: auto
+	height: auto
+	padding: 45px 0
+	text-align: left
+	display: block
+.nav__
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #3e5168
+	text-align: center
+	
+	.navbar-inverse
+		background-color: transparent
+		border: none
+		margin: 0
+		display: inline
+		min-height: 1px
+		vertical-align: middle
+		.navbar-nav > li
+			position: relative
+			padding: 52px 0
+			&:hover
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 100%
+					height: 2px
+					background-color: $main_color
+		.navbar-nav > li > a
+			padding: 0
+			font-size: em(14px)
+			text-transform: uppercase
+			font-family: "Exo2SemiBold"
+			color: #fff
+			margin: 0 11px
+
+
+.nominate
+	
+	background-color: $main_color
+	font-size: em(20px)
+	position: absolute
+	transform: skewX(-12deg)
+
+.navbar-collapse
+	position: relative
+
+.nav__ .navbar-inverse .navbar-nav > .nominate
+	position: absolute
+	right: 40px
+	bottom: 42px
+	padding: 12px 28px
+	&:hover
+		&:after
+			background-color: transparent
+
+.navbar-inverse .navbar-toggle
+	border-color: $main_color
+
+.head_content
+	width: 100%
+	height: auto
+	padding-top: 70px
+	// padding-bottom: 100px
+
+.top_head,
+.nav__,
+.head_content
+	transform: skewY(0deg)
+	
+.award_info
+	max-width: 500px
+	height: auto
+	border-left: 7px solid $main_color
+	padding-top: 2px
+	padding-bottom: 2px
+
+
+	span
+		padding-left: 12px
+		color: #fff
+		display: block
+		&:nth-child(1)
+			font-family: "MavedProBold"
+			font-size: em(20px)
+			display: inline-block
+		&:nth-child(2)
+			font-family: "MavedProRegular"
+			font-size: em(20px)
+			display: inline-block
+		&:nth-child(3)
+			font-family: "Exo2Regular"
+			font-size: em(52px)
+		&:nth-child(4)
+			font-family: "Exo2Regular"
+			font-size: em(52px)
+			color: #efbd73
+		&:nth-child(5)
+			font-family: "Exo2ExtraLight"
+			font-size: em(52px)
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 54%
+				left: 177px
+				transform: translateY(-46%)
+				
+				width: 105px
+				height: 5px
+				background-color: $main_color
+.head_content
+	.award_info
+		table
+			margin-left: 12px
+			.f_th
+				font-family: "Exo2Bold"
+				font-size: em(22px)
+			tr
+				color: #fff
+				
+
+			th
+				padding: 5px 5px
+				border: 1px solid #b5bcc5
+				border-left: none
+				.enather
+					display: block
+					font-family: "Exo2Bold"
+					font-size: em(13px)
+					color: #fff
+					background-color: $main_color
+					transform: skewX(-12deg)
+					text-transform: uppercase
+					padding: 0 5px
+			.twice
+				span
+					font-family: "Exo2Light"
+					padding-bottom: 3px
+				i + span
+					display: inline-block
+					vertical-align: middle
+					font-size: em(16px)
+				p
+					display: inline-block
+					margin-bottom: 0
+					padding: 0
+					margin-left: 5px
+					font-size: em(16px)
+					font-family: "Exo2Bold"
+				&:nth-child(1)
+					p
+						color: $main_color
+						position: relative
+						&:after
+							content: ""
+							position: absolute
+							bottom: 0
+							left: 0
+							background-color: $main_color
+							width: 100%
+							height: 3px
+
+			
+
+	p
+		font-size: em(20px)
+		font-family: "MavedProRegular"
+		color: #fff
+		font-weight: 300
+		padding-left: 12px
+
+.fixed_deg
+		transform: skewY(3deg)
+		text-align: center
+
+#change
+	width: 100%
+	min-height: 300px
+	position: relative
+	background-color: #f5f5f5
+	transform: skewY(-3deg)
+	z-index: -1
+	padding: 170px 0
+	overflow: hidden
+	>img
+		width: 100%
+		height: 150%
+		position: absolute
+		top: 0px
+		right: 0
+		transform: skewY(-12deg)
+		// z-index: 100
+	
+	.fixed_deg
+		transform: skewY(3deg)
+		text-align: center
+		h5
+			display: inline-block
+			color: #fff
+			line-height: 26px
+			padding: 0 10px
+			text-transform: uppercase
+			background-color: $main_color
+			font-size: em(24px)
+			font-family: "Exo2ExtraBoldItalic"
+			transform: skewX(-12deg)
+
+@import "../css/media"

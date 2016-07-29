@@ -2,22 +2,103 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+/*	#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 150%;
+		background-repeat: no-repeat;
+	}*/
 }
-
+@media only screen and (max-width : 1050px) {
+/*	#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 200%;
+		background-repeat: no-repeat;
+	}*/
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.logo{
+		padding: 20px 0 0;
+	}
+/*	#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 300%;
+		background-repeat: no-repeat;
+	}*/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.nav__ .navbar-inverse .navbar-nav > li{
+		padding: 0;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+		background-color: #5086f2;
+	}
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+		border-color: #3e5168;
+	}
+	.nav__ .navbar-inverse .navbar-nav > .nominate{
+		position: inherit;
+
+	}
+	.head_contact span, .head_contact i{
+		display: inline-block;
+		color: #d1e3ff;
+		font-size: 1em;
+		vertical-align: middle;
+		line-height: 35px;
+	}
+	.logo{
+		padding: 25px 0 10px;
+	}
+/*	#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 420%;
+		background-repeat: no-repeat;
+	}*/
+}
+@media only screen and (max-width : 410px){
 
 }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.nav__ .navbar-inverse .navbar-nav > li{
+		margin-top: 5px;
+		display: block;
+		width: auto;
+	}
+}
 
+@media only screen and (max-width : 410px){
+	.head_contact span, .head_contact i{
+		font-size: 0.8em;
+	}
+/*	#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 510%;
+		background-repeat: no-repeat;
+	}*/
+	.award_info{
+		max-width: 350px;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -46,6 +127,17 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+}
+
+@media only screen and (min-width : 1300px) {
+	/*#wrappper_{
+		width: 100%;
+		min-height: 7900px;
+		background-image: url(../img/bg.jpg);
+		background-position: center top;
+		background-size: 150%;
+		background-repeat: no-repeat;
+	}*/
 }
 
  /* Large Devices, Wide Screens */
