@@ -125,6 +125,7 @@ p
 	min-height: 7900px
 	margin-top: -30px
 	overflow: hidden
+	z-index: -10
 	// background-image: url(../img/bg.jpg)
 	// background-position: center top
 	// background-size: 130%
@@ -200,7 +201,7 @@ p
 
 .overlay__
 	position: relative
-
+	z-index: -100000
 	>img
 		position: absolute
 		right: 0
@@ -294,11 +295,11 @@ p
 		color: #fff
 		display: block
 		&:nth-child(1)
-			font-family: "MavedProBold"
+			font-family: "MavenProBold"
 			font-size: em(20px)
 			display: inline-block
 		&:nth-child(2)
-			font-family: "MavedProRegular"
+			font-family: "MavenProRegular"
 			font-size: em(20px)
 			display: inline-block
 		&:nth-child(3)
@@ -378,7 +379,7 @@ p
 
 	p
 		font-size: em(20px)
-		font-family: "MavedProRegular"
+		font-family: "MavenProRegular"
 		color: #fff
 		font-weight: 300
 		padding-left: 12px
@@ -387,14 +388,38 @@ p
 		transform: skewY(3deg)
 		text-align: center
 
+section
+	h5
+		display: inline-block
+		color: #fff
+		line-height: 24px
+		padding: 0 10px
+		text-transform: uppercase
+		background-color: $main_color
+		font-size: em(23px)
+		font-family: "Exo2ExtraBoldItalic"
+		transform: skewX(-12deg)
+	h1
+		color: $dark_blue
+		font-family: "Exo2ExtraLight"
+		display: block
+		text-transform: uppercase
+		margin-bottom: 20px
+		margin-top: 0
+	p
+		display: block
+		font-size: em(18px)
+		font-family: "MavenProRegular"
+
 #change
 	width: 100%
-	min-height: 300px
+	// min-height: 300px
+	height: auto
 	position: relative
 	background-color: #f5f5f5
 	transform: skewY(-3deg)
-	z-index: -1
-	padding: 170px 0
+	z-index: 10
+	padding: 170px 0 100px
 	overflow: hidden
 	>img
 		width: 100%
@@ -408,15 +433,121 @@ p
 	.fixed_deg
 		transform: skewY(3deg)
 		text-align: center
+		max-width: 670px
+		margin: 0 auto
 		h5
 			display: inline-block
 			color: #fff
-			line-height: 26px
+			line-height: 24px
 			padding: 0 10px
 			text-transform: uppercase
 			background-color: $main_color
-			font-size: em(24px)
+			font-size: em(23px)
 			font-family: "Exo2ExtraBoldItalic"
 			transform: skewX(-12deg)
+		h1
+			color: $dark_blue
+			font-family: "Exo2ExtraLight"
+			display: inline-block
+			text-transform: uppercase
+			margin-bottom: 20px
+			margin-top: 0
+		p
+			display: inline-block
+			font-size: em(18px)
+			font-family: "MavenProRegular"
+
+		a
+			font-family: "MavenProBold"
+			font-size: em(17px)
+			color: $main_color
+			position: relative
+			display: inline-block
+			text-transform: uppercase
+			z-index: 2000 !important
+			cursor: pointer
+			&:before
+				content: "\f061"
+				position: absolute
+				left: -20px
+				font-family: FontAwesome
+				font-style: normal
+				font-weight: normal
+				text-decoration: inherit
+			&:focus
+				text-decoration: none
+
+#reco
+	width: 100%
+	// min-height: 300px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s12.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: center center
+	transform: skewY(-3deg)
+	z-index: 10
+	padding: 150px 0 100px
+	overflow: hidden
+	.fixed_deg
+		
+		max-width: 870px
+		margin: 0 auto
+		.nominate
+			font-size: em(20px)
+			font-family: "Exo2MediumItalic"
+			background-color: transparent
+			border: 2px solid #fff
+			color: #fff
+			padding: 5px 20px 6px 20px
+			position: inherit
+			display: inline-block
+			// left: 0
+			// transform: translateX(-50%)
+			// display: block
+		p
+			font-size: em(18px)
+			padding-top: 40px
+			padding-bottom: 20px
+			font-family: "MavenProRegular"
+	h1
+		color: #fff
+	p
+		color: #fff
+		font-size: em(19px)
+	.row_items
+		transform: skewY(3deg)
+		span
+			display: block
+			width: 100%
+			text-align: center
+			color: #fff
+			// padding-bottom: 22px
+			&:nth-child(1)
+				font-size: em(116px)
+				font-family: "Exo2Thin"
+				line-height: 116px
+			&:nth-child(2)
+				font-size: em(22px)
+				font-family: "Exo2Bold"
+				padding-bottom: 11px
+				position: relative
+				&:after
+					content: ""
+					width: 27px
+					height: 1px
+					background-color: #ffbc5e
+					position: absolute
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+			&:nth-child(3)
+				font-size: em(18px)
+				font-family: "MavenProRegular"
+				padding-top: 11px
+
+
 
 @import "../css/media"

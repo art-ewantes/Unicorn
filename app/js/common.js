@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$a = $('.fixed_deg > a');
 
 
 	// $("#toggle_mnu").click(function(){

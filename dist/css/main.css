@@ -125,14 +125,14 @@
   font-weight: normal; }
 
 @font-face {
-  font-family: "MavedProBold";
+  font-family: "MavenProBold";
   src: url("../fonts/MavenPro-Bold/MavenPro-Bold.eot");
   src: url("../fonts/MavenPro-Bold/MavenPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts//MavenPro-Bold/MavenPro-Bold.woff") format("woff"), url("../fonts/MavenPro-Bold/MavenPro-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
-  font-family: "MavedProRegular";
+  font-family: "MavenProRegular";
   src: url("../fonts/MavenPro-Regular/MavenPro-Regular.eot");
   src: url("../fonts/MavenPro-Regular/MavenPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts//MavenPro-Regular/MavenPro-Regular.woff") format("woff"), url("../fonts/MavenPro-Regular/MavenPro-Regular.ttf") format("truetype");
   font-style: normal;
@@ -207,7 +207,8 @@ p {
   width: 100%;
   min-height: 7900px;
   margin-top: -30px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -10; }
 
 .top_head {
   width: 100%;
@@ -264,7 +265,8 @@ p {
           transform: skewY(3deg); }
 
 .overlay__ {
-  position: relative; }
+  position: relative;
+  z-index: -100000; }
   .overlay__ > img {
     position: absolute;
     right: 0;
@@ -355,11 +357,11 @@ p {
     color: #fff;
     display: block; }
     .award_info span:nth-child(1) {
-      font-family: "MavedProBold";
+      font-family: "MavenProBold";
       font-size: 1.25em;
       display: inline-block; }
     .award_info span:nth-child(2) {
-      font-family: "MavedProRegular";
+      font-family: "MavenProRegular";
       font-size: 1.25em;
       display: inline-block; }
     .award_info span:nth-child(3) {
@@ -435,7 +437,7 @@ p {
 
 .head_content p {
   font-size: 1.25em;
-  font-family: "MavedProRegular";
+  font-family: "MavenProRegular";
   color: #fff;
   font-weight: 300;
   padding-left: 12px; }
@@ -446,16 +448,42 @@ p {
           transform: skewY(3deg);
   text-align: center; }
 
+section h5 {
+  display: inline-block;
+  color: #fff;
+  line-height: 24px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  background-color: #5086f2;
+  font-size: 1.4375em;
+  font-family: "Exo2ExtraBoldItalic";
+  -webkit-transform: skewX(-12deg);
+      -ms-transform: skewX(-12deg);
+          transform: skewX(-12deg); }
+
+section h1 {
+  color: #364b74;
+  font-family: "Exo2ExtraLight";
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0; }
+
+section p {
+  display: block;
+  font-size: 1.125em;
+  font-family: "MavenProRegular"; }
+
 #change {
   width: 100%;
-  min-height: 300px;
+  height: auto;
   position: relative;
   background-color: #f5f5f5;
   -webkit-transform: skewY(-3deg);
       -ms-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  z-index: -1;
-  padding: 170px 0;
+  z-index: 10;
+  padding: 170px 0 100px;
   overflow: hidden; }
   #change > img {
     width: 100%;
@@ -470,19 +498,121 @@ p {
     -webkit-transform: skewY(3deg);
         -ms-transform: skewY(3deg);
             transform: skewY(3deg);
-    text-align: center; }
+    text-align: center;
+    max-width: 670px;
+    margin: 0 auto; }
     #change .fixed_deg h5 {
       display: inline-block;
       color: #fff;
-      line-height: 26px;
+      line-height: 24px;
       padding: 0 10px;
       text-transform: uppercase;
       background-color: #5086f2;
-      font-size: 1.5em;
+      font-size: 1.4375em;
       font-family: "Exo2ExtraBoldItalic";
       -webkit-transform: skewX(-12deg);
           -ms-transform: skewX(-12deg);
               transform: skewX(-12deg); }
+    #change .fixed_deg h1 {
+      color: #364b74;
+      font-family: "Exo2ExtraLight";
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-top: 0; }
+    #change .fixed_deg p {
+      display: inline-block;
+      font-size: 1.125em;
+      font-family: "MavenProRegular"; }
+    #change .fixed_deg a {
+      font-family: "MavenProBold";
+      font-size: 1.0625em;
+      color: #5086f2;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      z-index: 2000 !important;
+      cursor: pointer; }
+      #change .fixed_deg a:before {
+        content: "\f061";
+        position: absolute;
+        left: -20px;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; }
+      #change .fixed_deg a:focus {
+        text-decoration: none; }
+
+#reco {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-image: url(../img/bgc_s12.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  -webkit-transform: skewY(-3deg);
+      -ms-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: 10;
+  padding: 150px 0 100px;
+  overflow: hidden; }
+  #reco .fixed_deg {
+    max-width: 870px;
+    margin: 0 auto; }
+    #reco .fixed_deg .nominate {
+      font-size: 1.25em;
+      font-family: "Exo2MediumItalic";
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 5px 20px 6px 20px;
+      position: inherit;
+      display: inline-block; }
+    #reco .fixed_deg p {
+      font-size: 1.125em;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      font-family: "MavenProRegular"; }
+  #reco h1 {
+    color: #fff; }
+  #reco p {
+    color: #fff;
+    font-size: 1.1875em; }
+  #reco .row_items {
+    -webkit-transform: skewY(3deg);
+        -ms-transform: skewY(3deg);
+            transform: skewY(3deg); }
+    #reco .row_items span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #fff; }
+      #reco .row_items span:nth-child(1) {
+        font-size: 7.25em;
+        font-family: "Exo2Thin";
+        line-height: 116px; }
+      #reco .row_items span:nth-child(2) {
+        font-size: 1.375em;
+        font-family: "Exo2Bold";
+        padding-bottom: 11px;
+        position: relative; }
+        #reco .row_items span:nth-child(2):after {
+          content: "";
+          width: 27px;
+          height: 1px;
+          background-color: #ffbc5e;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+      #reco .row_items span:nth-child(3) {
+        font-size: 1.125em;
+        font-family: "MavenProRegular";
+        padding-top: 11px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
