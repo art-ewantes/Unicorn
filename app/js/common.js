@@ -1,7 +1,12 @@
 $(document).ready(function() {
-	$a = $('.fixed_deg > a');
+	
+	$('.award_info').addClass('animated fadeInLeft');
+	$('.watch_us').addClass('animated fadeInDown');
+	$('.overlay__').addClass('animated pulse');
+	$(".aN").animated("fadeOutUp, pulse");
 
-
+	// $("#pre_footer>.fixed_deg").parent(".button").css("text-align","right" ).html;
+	
 	// $("#toggle_mnu").click(function(){
 	// 	$(this).toggleClass("on");
 	// 	$("#menu").slideToggle();

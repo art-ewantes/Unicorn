@@ -86,7 +86,8 @@ a
 		text-decoration: none
 
 
-
+strong
+	font-family: "MavenProBold"
 	
 
 h2
@@ -122,14 +123,11 @@ p
 
 #wrappper_
 	width: 100%
-	min-height: 7900px
+	// min-height: 7900px
+	height: auto
 	margin-top: -30px
 	overflow: hidden
 	z-index: -10
-	// background-image: url(../img/bg.jpg)
-	// background-position: center top
-	// background-size: 130%
-	// background-repeat: no-repeat
 	
 	
 
@@ -180,29 +178,25 @@ p
 	padding-top: 29px
 	padding-bottom: 40px
 .wrapp_head
-	// position: relative
-	// background-image: url(../img/header_top.jpg)
-	// background-size: cover
-	// background-position: center center
-	// background-repeat: no-repeat
-	// max-height: 813px
-	// z-index: -19
-	// width: 100%
-	// background:  url(../img/header_top2.jpg) no-repeat
-	// background-position: center top
-	// background-repeat: no-repeat
-	// background-size: cover
-	// position: relative
-	// z-index: 10
-	// min-height: 700px
 	background-color: transparent
 	transform: skewY(3deg)
 	
-
+.watch_us
+	display: table
+	width: 100%
+	+animation-delay(.4s)
+	.row_watch_us
+		display: table-cell
+		height: 300px
+		vertical-align: middle
+		img
+			width: auto
+			height: auto
 
 .overlay__
 	position: relative
 	z-index: -100000
+	+animation-delay(.3s)
 	>img
 		position: absolute
 		right: 0
@@ -276,7 +270,6 @@ p
 	width: 100%
 	height: auto
 	padding-top: 70px
-	// padding-bottom: 100px
 
 .top_head,
 .nav__,
@@ -284,11 +277,12 @@ p
 	transform: skewY(0deg)
 	
 .award_info
-	max-width: 500px
+	max-width: 450px
 	height: auto
 	border-left: 7px solid $main_color
 	padding-top: 2px
 	padding-bottom: 2px
+	+animation-delay(.4s)
 
 
 	span
@@ -414,10 +408,13 @@ section
 
 #change
 	width: 100%
-	// min-height: 300px
 	height: auto
 	position: relative
 	background-color: #f5f5f5
+	// background-image: url(../img/alternative.jpg)
+	// background-size: 100% 100%
+	// background-position: center center
+	
 	transform: skewY(-3deg)
 	z-index: 10
 	padding: 170px 0 100px
@@ -480,8 +477,6 @@ section
 
 #reco
 	width: 100%
-	// min-height: 300px
-
 	height: auto
 	position: relative
 	background-image: url(../img/bgc_s12.jpg)
@@ -505,9 +500,7 @@ section
 			padding: 5px 20px 6px 20px
 			position: inherit
 			display: inline-block
-			// left: 0
-			// transform: translateX(-50%)
-			// display: block
+			text-transform: uppercase
 		p
 			font-size: em(18px)
 			padding-top: 40px
@@ -525,7 +518,6 @@ section
 			width: 100%
 			text-align: center
 			color: #fff
-			// padding-bottom: 22px
 			&:nth-child(1)
 				font-size: em(116px)
 				font-family: "Exo2Thin"
@@ -551,8 +543,6 @@ section
 
 #benefits
 	width: 100%
-	// min-height: 300px
-
 	height: auto
 	position: relative
 	background-image: url(../img/bgc_s13.jpg)
@@ -654,7 +644,664 @@ section
 			// padding-top: 65px
 			// padding-bottom: 70px
 			background-color: #3a4852
+#participants		
+	width: 100%
+	min-height: 800px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s14.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: center center
+	transform: skewY(-3deg)
+	z-index: 10
+	padding: 40px 0 130px
+	overflow: hidden				
+	.fixed_deg
+		max-width: 1000px
+		margin: 0 auto
+		h5
+			background-color: #fff
+			color: $main_color
+			padding: 2px 15px
+		h2
+			margin-top: 0
+			color: #fff
+			font-family: "Exo2Light"
+			text-transform: uppercase
+		p
+			font-family: "MavenProRegular"
+			font-size: em(18px)
+			color: #fff
+
+	.nomitate_item_right
+		width: 135px
+		height: 135px
+		border-radius: 50%
+		margin-top: 5px
+		vertical-align: top
+		display: inline
+		border: 1px solid #fff
+		background-color: transparent
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		.fa
+			line-height: 135px
+			color: #fff
+			font-size: em(64px)
+	// .nom_float
+	// 	float: right
+
+	.nomitate_item_top
+		text-align: right
+		display: inline-block
+		vertical-align: middle
+		float: left
+		max-width: 476px
+		padding-right: 20px
+	.nomitate_item_bottom
+		text-align: left
+		display: inline-block
+		vertical-align: middle
+		float: right
+		max-width: 476px
+		padding-right: 20px
+
+.fixed__deg
+	transform: skewY(3deg)
+	max-width: 100%
+	text-align: center
+	h4
+		color: #fff
+		font-family: "Exo2Bold"
+		font-size: em(30px)
+		text-transform: uppercase
+	h5
+		background-color: #fff
+		color: $main_color
+		padding: 2px 15px
+	h2
+		margin-top: 0
+		color: #fff
+		font-family: "Exo2Light"
+		text-transform: uppercase
+	p
+		font-family: "MavenProRegular"
+		font-size: em(18px)
+		color: #fff
+.fixed_deg
+	.nominate
+		font-size: em(20px)
+		font-family: "Exo2MediumItalic"
+		background-color: transparent
+		border: 2px solid #fff
+		color: #fff
+		padding: 5px 20px 6px 20px
+		position: inherit
+		display: inline-block
+		text-transform: uppercase
+		margin-bottom: 60px
+
+#participants
+	.fixed_deg
+		.message_nominate
+			padding: 10px 6px
+			background-color: #fff
+			max-width: 785px
+			height: auto
+			margin: 0 auto
+			p
+				font-size: em(17px)
+				font-family: "MavenProRegular"
+				color: #404040
+				margin: 0
+			.fa
+				font-size: em(18px)
+				color: #cccccc
+				padding-right: 10px
+				// padding-left: 5px
+
+.row_percents
+	width: 100%
+	height: auto
+	position: relative
+	.line
+		&:before
+			content: ""
+			width: 250px
+			height: 1px
+			background-color: #fff
+			position: absolute
+			top: 99%
+			left: 40%
+			-webkit-transform: translateX(-50%)
+			-ms-transform: translateX(-50%)
+			transform: translateX(-50%)
+			transform: rotateZ(-53deg)
+
+#judging		
+	width: 100%
+	min-height: 800px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s15.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: center center
+	transform: skewY(3deg)
+	margin-top: -70px
+	z-index: 10
+	padding: 100px 0 130px
+	overflow: hidden
+	.message_nominate
+		padding: 10px 15px
+		background-color: #fff
+		max-width: 785px
+		height: auto
+		margin: 0 auto
+		p
+			font-size: em(17px)
+			font-family: "MavenProRegular"
+			color: #404040
+			margin: 0
+		.fa
+			font-size: em(18px)
+			color: #cccccc
+			padding-right: 10px
+	.row_item_skills
+		margin-top: 11px
+		margin-bottom: 11px
+	.row_item_skills + .row_item_skills
 		
-					
+	.item_skills
+		height: auto
+		display: inline-block
+		text-align: center
+		margin-top: 10px
+		img
+			height: auto
+			display: inline-block
+		span
+			display: inline-block
+			height: auto
+			font-size: em(22px)
+			font-family: "Exo2Bold"
+			text-transform: uppercase
+			color: #404040
+		span + span
+			font-size: em(12px)
+			font-family: "MavenProRegular"
+	.fixed_deg_parent
+		transform: skewY(-3deg)
+		h2
+			margin-top: 0
+			font-family: "Exo2Light"
+			color: $dark_blue
+		p
+			color: $silver
+			font-size: em(18px)
+
+
+.fixed__deg + .fixed__deg
+	margin-top: 74px
+	
+
+#leaderboard
+	width: 100%
+	min-height: 800px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s16.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 150%
+	background-position: center center
+	transform: skewY(3deg)
+	margin-top: -70px
+	z-index: 10
+	padding: 100px 0 130px
+	overflow: hidden
+	.fixed_deg
+		transform: skewY(-3deg)
+		h2
+			color: $dark_blue
+	.row_leaderboard
+		margin-top: 20px
+		width: 100%
+		height: auto
+		.leaderboard_item
+			margin-top: 15px
+			.leaderboard_item_header
+				width: 215px
+				height: 212px
+				position: relative
+				margin: 0 auto
+				img
+					width: 100%
+					height: auto
+				.bookmark
+					width: 45px
+					height: 45px
+					border-radius: 50%
+					background: rgba(0, 0, 0, 0.3)
+					text-align: center
+					font-size: em(18px)
+					font-family: "MavenProRegular"
+					color: #fff
+					position: absolute
+					top: 10px
+					right: 10px
+					overflow: hidden
+					.fa
+						line-height: 45px
+						padding-left: 3px
+						color: #fff
+						font-size: em(18px)
+			.leaderboard_item_footer
+				width: 215px
+				height: auto
+				background-color: #fff
+				padding: 20px
+				margin: 0 auto
+				text-align: left
+				font-family: "Exo2SemiBold"
+				font-size: em(22px)
+				border: 1px solid #e1e3e3
+		.vote_details
+			text-align: center
+			// font-size: em(20px)
+			// position: absolute
+			margin-top: 15px
+			a
+				display: inline-block
+				transform: skewX(-12deg)
+				border: 1px solid black
+				padding: 5px 15px
+				font-size: em(16px)
+				font-family: "Exo2Medium"
+				text-transform: uppercase
+				background-color: #000
+				color: #fff
+				transition: all .3s ease-in-out
+				text-decoration: none
+				&:hover
+					background-color: $main_color
+					border: 1px solid $main_color
+					transition: all .3s ease-in-out
+				&:active,:focus,:hover
+					text-decoration: none
+
+			a + a
+				border-left: none
+				background-color: transparent
+				color: #000
+				&:hover
+					background-color: $main_color
+					border: 1px solid $main_color
+					transition: all .3s ease-in-out
+					border-left: none
+.all_nomines
+	border-top: 1px solid #fff
+	width: 100%
+	height: auto
+	padding-top: 20px
+	text-align: left
+	p
+		display: inline-block
+		font-size: em(18px)
+		font-family: "MavenProRegular"
+		margin: 0
+	.button
+		float: right
+
+.button
+	font-size: em(20px)
+	font-family: "Exo2MediumItalic"
+	background-color: $main_color
+	transform: skewX(-12deg)
+	display: inline-block
+	border: 2px solid $main_color
+	color: #fff
+	padding: 5px 20px 6px 20px
+	position: inherit
+	text-transform: uppercase
+	&:hover,:active,:focus
+		text-decoration: none
+		color: #fff
+    // margin-bottom: 60px
+
+
+
+
+#steps
+	width: 100%
+	min-height: 800px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s17.jpg)
+	background-repeat: no-repeat
+	// background-size: 100% 100%
+	background-size: cover
+	background-position: center center
+	transform: skewY(3deg)
+	margin-top: -40px
+	z-index: -1
+	padding: 100px 0 130px
+	overflow: hidden
+	.fixed_deg
+		transform: skewY(-3deg)
+		h5
+			padding: 0 20px
+		h2
+			color: #fff
+			text-transform: uppercase
+			max-width: 630px
+			margin: 0 auto
+.steps_item
+	text-align: center
+	margin-top: 20px
+	span
+		display: block
+		color: #fff
+		&:nth-child(2)
+			font-family: "Exo2Bold"
+			font-size: em(22px)
+			color: #43a2fd
+			text-transform: uppercase
+			margin-top: 10px
+		&:nth-child(3)
+			font-family: "Exo2Bold"
+			font-size: em(18px)
+			text-transform: uppercase
+			color: #fff
+		&:nth-child(1)
+			font-family: "Exo2Medium"
+			font-size: em(16px)
+			text-transform: uppercase
+			color: #fff
+	p
+		color: #fff
+		max-width: 200px
+		margin: 0 auto
+		padding-top: 10px
+#steps
+	.middle
+		span
+			display: block
+			color: #fff
+			&:nth-child(2)
+				font-family: "Exo2Bold"
+				font-size: em(22px)
+				color: #a672ed
+				text-transform: uppercase
+				margin-top: 10px
+			&:nth-child(3)
+				font-family: "Exo2Bold"
+				font-size: em(18px)
+				text-transform: uppercase
+				color: #fff
+			&:nth-child(1)
+				font-family: "Exo2Medium"
+				font-size: em(16px)
+				text-transform: uppercase
+				color: #fff			
+#steps
+	.right
+		span
+			display: block
+			color: #fff
+			&:nth-child(2)
+				font-family: "Exo2Bold"
+				font-size: em(22px)
+				color: #f08754
+				text-transform: uppercase
+				margin-top: 10px
+			&:nth-child(3)
+				font-family: "Exo2Bold"
+				font-size: em(18px)
+				text-transform: uppercase
+				color: #fff
+			&:nth-child(1)
+				font-family: "Exo2Medium"
+				font-size: em(16px)
+				text-transform: uppercase
+				color: #fff	
+
+.row_steps
+	margin-top: 20px
+
+
+.steps_h
+	position: relative
+	width: 110px
+	height: 110px
+	border-radius: 50%
+	margin: 0 auto
+	background-image: url(../img/circle1.jpg)
+	background-size: 200%
+	background-position: center center
+	// overflow: hidden
+	// background-color: #6ebdf8
+	// box-shadow: inset -9px 2px 45px 23px rgba(86,144,243,1)
+	.fa
+		line-height: 110px
+		color: #fff
+		font-size: em(33px)
+
+.steps_h_middle
+	position: relative
+	width: 110px
+	height: 110px
+	border-radius: 50%
+	margin: 0 auto
+	background-image: url(../img/circle2.jpg)
+	background-size: 200%
+	background-position: center center
+	// overflow: hidden
+	// background-color: #6ebdf8
+	// box-shadow: inset -9px 2px 45px 23px rgba(86,144,243,1)
+	.fa
+		line-height: 110px
+		color: #fff
+		font-size: em(33px)
+.steps_h_right
+	position: relative
+	width: 110px
+	height: 110px
+	border-radius: 50%
+	margin: 0 auto
+	background-image: url(../img/circle3.jpg)
+	background-size: 200%
+	background-position: center center
+	// overflow: hidden
+	// background-color: #6ebdf8
+	// box-shadow: inset -9px 2px 45px 23px rgba(86,144,243,1)
+	.fa
+		line-height: 110px
+		color: #fff
+		font-size: em(33px)
+
+
+
+.line_steps_right
+	width: 100%
+	height: auto
+	&:after
+		content: ""
+		width: 182px
+		height: 1px
+		background-image: url(../img/horizont1.png)
+		background-size: 100%
+		background-position: center
+		position: absolute
+		top: 50%
+		left: 220%
+		transform: translate(-50%, -220%)
+
+.line_steps_left
+	width: 100%
+	height: auto
+	&:after
+		content: ""
+		width: 182px
+		height: 1px
+		background-image: url(../img/horizont2.png)
+		background-size: 100%
+		background-position: center
+		position: absolute
+		top: 50%
+		right: 60%
+		transform: translate(-50%, -60%)
+
+
+
+
+#pre_footer
+	width: 100%
+	background-image: url(../img/prefooter.jpg)
+	background-size: 100% 100%
+	background-position: center center
+	display: block
+	background-repeat: no-repeat
+	z-index: 20
+	margin-top: -75px
+	overflow: hidden
+	padding: 80px 0
+	.fixed_deg
+	    transform: skewY(0deg)
+	    text-align: left
+	h3
+		display: inline-block
+		vertical-align: middle
+		font-size: em(32px)
+		font-family: "Exo2BoldItalic"
+		margin: 0
+		color: #fff
+		// padding-left: 40px
+		text-transform: uppercase
+	h3 + h3
+		display: inline-block
+		vertical-align: middle
+		font-size: em(32px)
+		font-family: "Exo2LightItalic"
+		padding: 0
+	.fixed_button
+		transform: skewY(0deg)
+		text-align: right
+		.button
+			float: right
+			background-color: transparent
+			color: #fff
+			vertical-align: middle
+			display: inline-block
+			margin-right: 90px
+	
+#footer
+	width: 100%
+	min-height: 333px
+	display: block
+	z-index: 10
+	overflow: hidden
+	background-color: #fff
+	padding: 80px 0 10px
+	.fixed_deg
+		transform: skewY(0deg)
+		text-align: left
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	color: #404040
+	    	text-transform: uppercase
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: $main_color
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+		ul
+			width: auto
+			display: inline-block
+			list-style-type: none
+			li
+				margin: 0
+				padding: 0
+				margin-top: 5px
+				color: #808080
+				font-family: "MavenProRegular"
+				font-size: em(16px)
+		.li_table
+			width: 100%
+			height: auto
+			list-style-type: none
+			li
+				margin: 0
+				padding: 0
+				width: 100%
+				height: auto
+				border-bottom: 1px solid #e6e6e6
+				a
+					color: $main_color
+					font-size: em(16px)
+					font-family: "MavenProRegular"
+					text-decoration: none
+					margin-left: 5px
+	.two
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: #e2b23e
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+	.three
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: #ea4dfd
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+
+
+.row_footer
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #e6e6e6
+	padding-bottom: 40px
+
+
+
+
+
+
+
+
 
 @import "../css/media"

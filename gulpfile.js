@@ -27,10 +27,14 @@ gulp.task("scripts", function(){
 		"app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
 		"app/libs/html5shiv/dist/html5shiv.min.js",
 		"app/libs/parallax/deploy/parallax.min.js",
-		"app/libs/animated/animated.js",
+		// "app/libs/animated/animated.js",
+
+		
 		"app/libs/respond/dest/respond.min.js",
 		"app/libs/scroll2id/PageScroll2id.min.js",
 		"app/libs/owl.carousel/dist/owl.carousel.min.js",
+		"app/libs/waypoints/waypoints.min.js",
+		"app/libs/animated/animate-css.js",
 		"app/libs/bootstrap/dist/js/bootstrap.min.js",
 		])
 	.pipe(concat("libs.min.js"))

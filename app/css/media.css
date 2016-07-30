@@ -2,24 +2,37 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-/*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 150%;
-		background-repeat: no-repeat;
-	}*/
+	#participants .nomitate_item_top{
+		max-width: 380px;
+	}
+	#participants .nomitate_item_bottom{
+		max-width: 380px;
+	}
 }
-@media only screen and (max-width : 1050px) {
-/*	#wrappper_{
-		width: 100%;
-		min-height: 7900px;
-		background-image: url(../img/bg.jpg);
-		background-position: center top;
-		background-size: 200%;
-		background-repeat: no-repeat;
+@media only screen and (max-width : 1024px) {
+	/*#participants .nomitate_item_top{
+		float: none;
+		display: block;
+		max-width: 100%;
+	}
+	#participants .nomitate_item_right{
+		left: 0;
 	}*/
+	.row_percents .line:before{
+		content: "";
+		width: 250px;
+		height: 1px;
+		background-color: #fff;
+		position: absolute;
+		top: 86%;
+		left: 38%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		-webkit-transform: rotateZ(-53deg);
+		-ms-transform: rotate(-53deg);
+		transform: rotateZ(-53deg);
+	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -31,6 +44,18 @@
 	}
 	#benefits{
 		background-size: cover;
+	}
+	#pre_footer .fixed_deg > .button{
+		float: none;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	#pre_footer h3{
+		padding-left: 0;
+	}
+	#footer .fixed_deg .li_table{
+		width: auto;
+		
 	}
 }
 
@@ -60,6 +85,12 @@
 	}
 	.logo{
 		padding: 25px 0 10px;
+	}
+	#participants .nomitate_item_top{
+		max-width: 100%;
+	}
+	#participants .nomitate_item_bottom{
+		max-width: 100%;
 	}
 
 }
