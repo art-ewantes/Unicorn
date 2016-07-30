@@ -55,7 +55,10 @@
 	}
 	#footer .fixed_deg .li_table{
 		width: auto;
-		
+
+	}
+	.all_nomines .___nominatees .button{
+		width: auto;
 	}
 }
 
@@ -91,6 +94,9 @@
 	}
 	#participants .nomitate_item_bottom{
 		max-width: 100%;
+	}
+	#instagram .fixed_deg{
+		text-align: center;
 	}
 
 }

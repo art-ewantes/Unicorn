@@ -337,8 +337,8 @@ p
 					display: block
 					font-family: "Exo2Bold"
 					font-size: em(13px)
-					color: #fff
-					background-color: $main_color
+					color: #000
+					background-color: #efbe73
 					transform: skewX(-12deg)
 					text-transform: uppercase
 					padding: 0 5px
@@ -359,16 +359,16 @@ p
 					font-family: "Exo2Bold"
 				&:nth-child(1)
 					p
-						color: $main_color
+						color: #efbe73
 						position: relative
-						&:after
-							content: ""
-							position: absolute
-							bottom: 0
-							left: 0
-							background-color: $main_color
-							width: 100%
-							height: 3px
+						// &:after
+						// 	content: ""
+						// 	position: absolute
+						// 	bottom: 0
+						// 	left: 0
+						// 	background-color: $main_color
+						// 	width: 100%
+						// 	height: 3px
 
 			
 
@@ -763,6 +763,13 @@ section
 				color: #cccccc
 				padding-right: 10px
 				// padding-left: 5px
+.message_nominate
+	a
+		color: $main_color
+		&:hover
+			color: $main_color
+			text-decoration: underline
+
 
 .row_percents
 	width: 100%
@@ -945,18 +952,46 @@ section
 					transition: all .3s ease-in-out
 					border-left: none
 .all_nomines
-	border-top: 1px solid #fff
+	// border-top: 1px solid #fff
 	width: 100%
-	height: auto
-	padding-top: 20px
 	text-align: left
-	p
+	.___nominatees
 		display: inline-block
 		font-size: em(18px)
+		width: 100%
 		font-family: "MavenProRegular"
-		margin: 0
-	.button
-		float: right
+		margin-top: 50px
+		display: inline-block
+		padding: 25px 25px
+		background-color: #fff
+		transform: skewX(-12deg)
+		p
+			display: inline-block
+			vertical-align: middle
+			transform: skewX(15deg)
+			margin: 0
+			padding-top: 11px
+		.button
+			width: auto
+			text-align: right
+			display: inline-block
+			vertical-align: middle
+			transform: skewX(-4deg)
+			float: right
+			margin-top: 5px
+			transition: all .3s ease-in-out
+			&:hover
+				background-color: transparent
+				color: $main_color
+				transition: all .3s ease-in-out
+		.button + .button
+			margin-right: 15px
+			background-color: transparent
+			color: $main_color
+			&:hover
+				background-color: $main_color
+				color: #fff
+				transition: all .3s ease-in-out
 
 .button
 	font-size: em(20px)
@@ -990,7 +1025,7 @@ section
 	background-position: center center
 	transform: skewY(3deg)
 	margin-top: -40px
-	z-index: -1
+	z-index: 1
 	padding: 100px 0 130px
 	overflow: hidden
 	.fixed_deg
@@ -1029,6 +1064,70 @@ section
 		max-width: 200px
 		margin: 0 auto
 		padding-top: 10px
+
+
+.steps_h_middle,
+.steps_h,
+.steps_h_right
+	.iner_steps
+		height: 30px
+		width: 30px
+		border-radius: 50%
+		background-color: #fff
+		position: absolute
+		bottom: 0
+		right: 0
+		.fa
+			display: inline-block
+			vertical-align: middle
+			color: $main_color
+			font-size: em(15px)
+			line-height: 30px
+			// position: absolute
+			// top: 0
+			// left: 0
+
+#steps
+	.steps_item
+		.location
+			// width: 100%
+			display: inline-block
+			min-width: 250px
+			min-height: 110px
+			position: relative
+			background: rgba(255, 255, 255, 0.2)
+			margin-top: 50px
+			padding: 30px 5px
+			p
+				font-size: em(18px)
+				color: #fff
+				font-family: "Exo2Bold"
+				padding: 0
+
+			p + p
+				font-size: em(16px)
+				padding: 0
+				color: #fff
+				font-family: "MavenProRegular"
+
+		.location___
+			width: 48px
+			height: 48px
+			background-color: #fff
+			position: absolute
+			border-radius: 50%
+			top: -24px
+			left: 50%
+			transform: translateX(-50%)
+			.fa
+				color: #273767
+				font-size: em(24px)
+				display: inline-block
+				vertical-align: middle
+				line-height: 48px
+
+
+
 #steps
 	.middle
 		span
@@ -1169,7 +1268,7 @@ section
 	display: block
 	background-repeat: no-repeat
 	z-index: 20
-	margin-top: -75px
+	// margin-top: -75px
 	overflow: hidden
 	padding: 80px 0
 	.fixed_deg
@@ -1298,9 +1397,227 @@ section
 
 
 
+#instagram
+	width: 100%
+	min-height: 800px
+
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s18.jpg)
+	background-repeat: no-repeat
+	// background-size: 100% 100%
+	background-size: cover
+	background-position: center center
+	transform: skewY(3deg)
+	margin-top: -40px
+	z-index: 0
+	padding: 70px 0 130px
+	overflow: hidden
+	.fixed_deg
+		transform: skewY(-3deg)
+		text-align: left
+
+// addaptive_table
+// /* ------------- Контейнер с адаптивными блоками-------------
+
+.masonry
+  margin: 1.5em 0
+  padding: 0
+  column-gap: 0em
+  // /* Общее расстояние между колонками
+  font-size: .85em
+  // -moz-column-gap: 1.5em
+  // /* Расстояние между колонками для Firefox
+  // -webkit-column-gap: 1.5em
+  // /* Расстояние между колонками  для Safari, Chrome и iOS
+
+// /* Элементы в виде плиток с содержанием
+
+.item
+  display: inline-block
+  background: transparent
+  width: 232px
+  height: 232px
+  box-sizing: border-box
+  position: relative
+  text-align: left
+  // border: 1px solid transparent
+  .port_item
+    position: absolute
+    top: 0
+    left: 0
+    width: 232px
+    height: 232px
+    background-color: rgba(80, 134, 242, 0.8)
+    text-align: left
+    padding: 30px 25px
+    opacity: 0
+    -webkit-transition: all 0.6s
+    transition: all 0.6s
+    &:hover
+    	opacity: 1
+
+  // /* Внешняя тень плиток
+
+// /* Стили картинок, видое и фреймов внутри адаптивных плиток
+
+	img, iframe
+		max-width: 100%
+		height: auto
+		display: block
+
+.port_item
+	p
+		font-size: em(16px)
+		font-family: "MavenProRegular"
+		color: #fff
+	._item_top
+			width: 100%
+			min-height: 130px
+	._item
+		width: 100%
+		border-top: 1px solid #fff
+		height: auto
+		text-align: center
+		._item_left, 
+		._item_right
+			display: inline-block
+			padding-top: 5px
+		._item_left
+			margin-right: 55px
+		.fa
+			display: inline-block
+			vertical-align: middle
+			font-size: em(22px)
+			color: #fff
+		span
+			font-size: em(20px)
+			font-family: "MavenProRegular"
+			color: #fff
+			display: inline-block
+			vertical-align: middle
 
 
 
+// /* Стили ссылок внутри плиток
+
+.item a
+  text-decoration: none
+  color: #359CC6
+  margin: 0 10px
+  &:hover
+    color: #E88F00
+    border-bottom: 1px dotted #9F1D35
+
+// /* Стили ссылок при наведении
+
+#video_gallery
+	transform: skewY(3deg)
+	margin-top: -50px
+
+.bg_gallery
+	min-height: 360px
+	background-image: url(../img/video_bg.jpg)
+	background-size: 100% 100%
+	background-position: center center
+	background-repeat: no-repeat
+	transform: skewY(-3deg)
+	text-align: center
+	margin-top: -70px
+	.gallery
+		transform: skewY(0deg)
+		padding: 108px 0
+		h2
+			color: #fff
+			position: relative
+			padding-bottom: 15px
+			&:after
+				content: ""
+				width: 27px
+				height: 1px
+				background-color: #fff
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+		h5
+			padding: 2px 15px
+		a
+			font-family: "MavenProBold"
+			font-size: em(22px)
+			text-transform: uppercase
+			color: #fff
+			&:hover
+				text-decoration: underline
+
+		
+.overlay_gallary
+	background: rgba(0, 0, 0, 0.5)
+	transform: skewY(0deg)
+	min-height: 360px
+
+.gallery
+	width: 100%
+	min-height: 360px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Медиа-запросы для различных размеров адаптивного макета
+@media only screen and (min-width: 400px)
+	.masonry
+		-moz-column-count: 2
+		-webkit-column-count: 2
+		column-count: 2
+	#instagram .fixed_deg
+		text-align: center
+@media only screen and (min-width: 700px)
+	.masonry
+		-moz-column-count: 2
+		-webkit-column-count: 2
+		column-count: 2
+		text-align: center
+	#instagram .fixed_deg
+		text-align: center
+	
+
+@media only screen and (min-width: 900px)
+  .masonry
+    -moz-column-count: 2
+    -webkit-column-count: 2
+    column-count: 2
+
+@media only screen and (min-width: 1100px)
+  .masonry
+    -moz-column-count: 5
+    -webkit-column-count: 5
+    column-count: 5
+
+@media only screen and (min-width: 1280px)
+  .wrapper
+    width: 1260px
 
 
 
