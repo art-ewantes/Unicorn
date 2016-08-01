@@ -1,0 +1,906 @@
+@import "bourbon/app/assets/stylesheets/bourbon"
+@import "../css/fonts"
+*
+	margin: 0
+	padding: 0
+
+$main_color: #5086f2
+$silver: #666666
+$dark_blue: #364b74
+$silver_dark: #383f42
+
+=animation-delay($animation)
+	-webkit-animation-delay: $animation
+	-o-animation-delay: $animation
+	-moz-animation-delay: $animation
+	animation-delay: $animation
+
+=border-radius($border-radius)
+	-webkit-border-radius: $border-radius
+	-o-border-radius: $border-radius
+	-moz-border-radius: $border-radius
+	border-radius: $border-radius
+
+=placeholder ($placeholder) 
+	-webkit-input-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-ms-input-placeholder: $placeholder
+
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition: $transition
+	-o-transition: $transition
+	transition: $transition
+
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+
++placeholder
+	// color: $main_color
+
+img
+	max-width: 100%
+	vertical-align: middle
+
+
+body
+	font-family: "Exo2Regular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	background-color: #fff
+	outline: none
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #52a028
+	outline: none
+	border: 1px solid #52a028
+body input:required:valid,
+body textarea:required:valid
+	color: #52a028
+	outline: none
+	border: 1px solid #52a028
+a
+	cursor: pointer
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:active
+		text-decoration: none
+
+
+strong
+	font-family: "MavenProBold"
+	
+
+h2
+	font-size: em(48px)
+	font-family: "Exo2Light"
+h1
+	font-size: em(50px)
+	font-family: "Exo2ExtraLight"
+
+h3
+	font-size: em(32px)
+
+h4
+	font-style: em(30px)
+	font-family: "Exo2Bold"
+
+h5
+	font-size: em(24px)
+	font-family: "Exo2ExtraBoldItalic"
+
+p
+	font-size: em(18px)
+	font-family: "MavedProRegular"
+
+	
+
+
+.hidden
+	display: none
+
+
+
+
+#wrappper_
+	width: 100%
+	// min-height: 7900px
+	height: auto
+	margin-top: -30px
+	overflow: hidden
+	z-index: -10
+	
+	
+// header
+
+
+
+
+
+.top_head
+	width: 100%
+	height: auto
+	background-image: url(../img/top_mnu.jpg)
+	background-position: right top
+	background-size: cover
+	background-repeat: no-repeat
+
+.head_contact
+	width: 100%
+	span
+		font-family: "Exo2Regular"
+		font-size: em(16px)
+	span, i
+		display: inline-block
+		vertical-align: middle
+		color: #d1e3ff
+		font-size: em(16px)
+		line-height: 38px
+.head_social
+	display: inline-block
+	float: right
+	overflow: hidden
+	.fa
+		vertical-align: middle
+		display: inline-block
+		font-size: em(18px)
+		padding-right: 13px
+		color: #bbd2ff
+		line-height: 38px
+		&:hover
+			color: #fafafa
+
+.main_head
+	transform: skewY(-3deg)
+	width: 100%
+	background:  url(../img/leaderboard.jpg) no-repeat
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	z-index: 10
+	min-height: 500px
+	padding-top: 29px
+	padding-bottom: 40px
+.wrapp_head
+	background-color: transparent
+	transform: skewY(3deg)
+
+header
+	z-index: -1
+
+
+
+.watch_us
+	display: table
+	width: 100%
+	+animation-delay(.4s)
+	.row_watch_us
+		display: table-cell
+		height: 300px
+		vertical-align: middle
+		img
+			width: auto
+			height: auto
+
+.logo
+	width: auto
+	height: auto
+	padding: 45px 0
+	text-align: left
+	display: block
+.nav__
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #3e5168
+	text-align: center
+	
+	.navbar-inverse
+		background-color: transparent
+		border: none
+		margin: 0
+		display: inline
+		min-height: 1px
+		vertical-align: middle
+		.navbar-nav > li
+			position: relative
+			padding: 52px 0
+			&:hover
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 100%
+					height: 2px
+					background-color: $main_color
+		.navbar-nav > li > a
+			padding: 0
+			font-size: em(14px)
+			text-transform: uppercase
+			font-family: "Exo2SemiBold"
+			color: #fff
+			margin: 0 11px
+
+
+.nominate
+	
+	background-color: $main_color
+	font-size: em(20px)
+	position: absolute
+	transform: skewX(-12deg)
+
+.navbar-collapse
+	position: relative
+
+.nav__ .navbar-inverse .navbar-nav > .nominate
+	position: absolute
+	right: 40px
+	bottom: 42px
+	padding: 12px 28px
+	&:hover
+		&:after
+			background-color: transparent
+
+.navbar-inverse .navbar-toggle
+	border-color: $main_color
+
+
+
+.top_head,
+.nav__,
+.head_content
+	transform: skewY(0deg)
+
+.fixed_deg
+		transform: skewY(3deg)
+		text-align: center
+
+// header end
+
+section
+	h5
+		display: inline-block
+		color: #fff
+		line-height: 24px
+		padding: 0 10px
+		text-transform: uppercase
+		background-color: $main_color
+		font-size: em(23px)
+		font-family: "Exo2ExtraBoldItalic"
+		transform: skewX(-12deg)
+	h1
+		color: $dark_blue
+		font-family: "Exo2ExtraLight"
+		display: block
+		text-transform: uppercase
+		margin-bottom: 20px
+		margin-top: 0
+	p
+		display: block
+		font-size: em(18px)
+		font-family: "MavenProRegular"
+
+
+
+
+// footer
+#footer
+	width: 100%
+	min-height: 333px
+	display: block
+	z-index: 10
+	overflow: hidden
+	background-color: #fff
+	padding: 80px 0 10px
+	.fixed_deg
+		transform: skewY(0deg)
+		text-align: left
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	color: #404040
+	    	text-transform: uppercase
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: $main_color
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+		ul
+			width: auto
+			display: block
+			list-style-type: none
+			padding-right: 60px
+			li
+				margin: 0
+				padding: 0
+				margin-top: 5px
+				color: #808080
+				font-family: "MavenProRegular"
+				font-size: em(16px)
+				width: 100%
+				border-bottom: 1px solid #e6e6e6
+		.li_table
+			width: 100%
+			height: auto
+			list-style-type: none
+			li
+				margin: 0
+				padding: 0
+				width: 100%
+				height: auto
+				border-bottom: 1px solid #e6e6e6
+				a
+					color: $main_color
+					font-size: em(16px)
+					font-family: "MavenProRegular"
+					text-decoration: none
+					margin-left: 5px
+	.two
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: #e2b23e
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+	.three
+		h3
+	    	display: block
+	    	height: auto
+	    	font-size: em(24px)
+	    	font-family: "Exo2Light"
+	    	position: relative
+	    	padding-bottom: 10px
+	    	&:before
+	    		content: ""
+	    		width: 27px
+	    		height: 1px
+	    		background-color: #ea4dfd
+	    		position: absolute
+	    		left: 0
+	    		bottom: 0
+
+
+.row_footer
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #e6e6e6
+	padding-bottom: 40px
+
+.copirating
+	width: 100%
+	height: auto
+	padding: 30px 0
+	text-align: center
+	position: relative
+	span
+		&:nth-child(1)
+			font-size: em(15px)
+			color: #808080
+			font-family: "MavenProRegular"
+			margin-right: 10px
+		&:nth-child(2)
+			font-size: em(15px)
+			color: #404040
+			font-family: "MavenProBold"
+.back_to_top
+	width: auto
+	height: auto
+	position: absolute
+	right: 0
+	.animated
+		visibility: visible
+	.fa
+		font-size: em(24px)
+		color: #999999
+
+//footer end
+
+
+
+
+.animated
+	visibility: hidden
+
+
+.fadeInUp,
+.fadeInDown,
+.fadeInRight,
+.pulse,
+.flipInX,
+.flipInY,
+.zoomIn,
+.fadeInLeft,
+.rollIn,
+.rotateIn,
+.flip
+	visibility: visible
+
+
+.row_leader_board
+	width: 100%
+	height: auto
+	padding: 50px 0
+	.fixed_deg
+		transform: skewY(0deg)
+		h2
+			display: block
+			text-transform: uppercase
+			margin-bottom: 20px
+			margin-top: 5px
+			color: #fff
+		h5
+			display: inline-block
+			margin: 0 auto
+			color: #fff
+			line-height: 24px
+			padding: 0 10px
+			text-transform: uppercase
+			background-color: #5086f2
+			font-size: 1.4375em
+			font-family: "Exo2ExtraBoldItalic"
+			-webkit-transform: skewX(-12deg)
+			-ms-transform: skewX(-12deg)
+			transform: skewX(-12deg)
+		p
+			font-size: em(18px)
+			font-family: "MavenProRegular"
+			color: #fff
+			text-align: center
+			max-width: 1040px
+			margin: 0 auto
+
+#leaderboard
+	width: 100%
+	height: auto
+	z-index: 10
+	margin-top: -70px
+	height: auto
+	position: relative
+	.row_main
+		display: block
+		margin: 0 auto
+		z-index: 10
+		max-width: 1040px
+		padding-left: 120px
+		padding-top: 60px
+		padding-bottom: 60px
+		padding-right: 70px
+		background-image: url(../img/leaderboardbg.png)
+		background-size: 100% 100%
+		background-position: top center
+		background-repeat: no-repeat
+		border-radius: 7px
+		overflow: hidden
+		height: auto
+		// box-shadow: -1px 4px 5px 0px rgba(225,227,227,1)
+		box-shadow: 0px 5px 13px -5px rgba(225,227,227,1)
+
+		.item_leader
+			padding: 0
+			margin: 0
+			background-color: #fff
+			height: 100%
+			.__two
+				background-color: #6377f7
+			.__one
+				background-color: #1f8cba
+			.__three
+				background-color: #746ff7
+			.__four
+				background-color: #8b69fa
+			.__fifth
+				background-color: #a160fc
+			.__six
+				background-color: #b048fa
+			.item_leader_left
+				padding: 20px
+				max-width: 240px
+				h4
+					font-size: em(31px)
+					font-family: "Exo2Light"
+					color: #fff
+					min-height: 150px
+				.__iner
+					color: #fff
+					display: block
+					width: 100%
+					height: auto
+					vertical-align: middle
+					span
+						font-family: "MavenProRegular"
+						font-size: em(16px)
+						display: inline-block
+						vertical-align: middle
+					.fa
+						font-size: em(14px)
+						display: inline-block
+						vertical-align: middle
+			.item_leader_center
+				width: 100%
+				height: auto
+				padding-top: 35px
+				padding-bottom: 20px
+				padding-right: 20px
+				// height: 252px
+				min-height: 220px
+				position: relative
+
+				p
+					font-family: "MavenProRegular"
+					font-size: em(16px)
+					text-align: left
+					color: #545454
+					max-width: 190px
+
+				a
+					font-size: em(16px)
+					font-family: "MavenProRegular"
+					color: $main_color
+				.vote_details
+					display: block
+					text-align: right
+					padding-right: 15px
+					position: absolute
+					right: 0
+					bottom: 0
+					a
+						display: inline-block
+						-webkit-transform: skewX(-12deg)
+						-ms-transform: skewX(-12deg)
+						transform: skewX(-12deg)
+						border: 1px solid #000
+						padding: 5px 15px
+						font-size: 1em
+						font-family: "Exo2Medium"
+						text-transform: uppercase
+						background-color: #000
+						color: #fff
+						transition: all .3s ease-in-out
+						text-decoration: none
+						&:hover
+							transition: all .3s ease-in-out
+							background-color: transparent
+							border: 1px solid #000
+							color: #000
+
+
+.row_main_items
+	width: 100%
+	min-height: 220px
+	background-color: #fff
+	margin-top: 30px
+	border: 1px solid #e1e3e3
+	box-shadow: -1px 4px 5px 0px rgba(225,227,227,1)
+	position: relative
+	margin: 10px 0
+
+
+
+.item_leader_right
+	width: 100%
+	height: auto
+	margin-top: 40px
+	margin-bottom: 30px
+	padding-right: 30px
+	padding-left: 15px
+	// margin-left: 15px
+	border-left: 3px solid $main_color
+	.item_leader_right_item
+		border-bottom: 1px solid #f2f2f2
+		position: relative
+		h6
+			display: block
+			font-size: em(13px)
+			color: #999999
+			font-family: "MavenProBold"
+			margin: 7px 0
+		.counter_leader
+			display: block
+			position: absolute
+			right: 0
+			top: -5px
+			vertical-align: middle
+			span
+				font-family: "MavenProBold"
+			i,
+			span
+				display: inline-block
+				vertical-align: middle
+				font-size: 13px
+				color: $main_color
+
+#judging		
+	width: 100%
+	min-height: 800px
+	margin-top: 100px
+	height: auto
+	position: relative
+	background-image: url(../img/bgc_s15.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	background-position: center center
+	// transform: skewY(3deg)
+	// margin-top: -110px
+	z-index: 10
+	padding: 100px 0 130px
+	overflow: hidden
+	.message_nominate
+		padding: 10px 15px
+		background-color: #fff
+		max-width: 785px
+		height: auto
+		margin: 0 auto
+		p
+			font-size: em(17px)
+			font-family: "MavenProRegular"
+			color: #404040
+			margin: 0
+		.fa
+			font-size: em(18px)
+			color: #cccccc
+			padding-right: 10px
+	.row_item_skills
+		margin-top: 11px
+		margin-bottom: 11px
+	.row_item_skills + .row_item_skills
+		
+	.item_skills
+		height: auto
+		display: inline-block
+		text-align: center
+		margin-top: 10px
+		img
+			height: auto
+			display: inline-block
+		span
+			display: block
+			height: auto
+			font-size: em(22px)
+			font-family: "Exo2Bold"
+			text-transform: uppercase
+			color: #404040
+		span + span
+			font-size: em(12px)
+			font-family: "MavenProRegular"
+	.fixed_deg_parent
+		// transform: skewY(-3deg)
+		h2
+			margin-top: 0
+			font-family: "Exo2Light"
+			color: $dark_blue
+		p
+			color: $silver
+			font-size: em(18px)
+
+
+.fixed__deg + .fixed__deg
+	margin-top: 74px
+
+.counter_new
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #1f8cba transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+
+
+.counter_new_two
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #6377f7 transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+
+.counter_new_three
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #746ff7 transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+.counter_new_four
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #8b69fa transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+
+.counter_new_fifth
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #a160fc transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+
+.counter_new_six
+	display: block
+	z-index: 1
+	position: absolute
+	top: 0
+	right: 0
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 50px 50px 0
+	border-color: transparent #b048fa transparent transparent
+	span
+		display: inline-block
+		position: absolute
+		top: 6px
+		left: 33px
+		color: #fff
+		font-family: "Exo2ExtraBoldItalic"
+
+
+
+
+
+
+@media only screen and (max-width: 1200px)
+	// #leaderboard .row_main .item_leader
+	// 	max-width: 240px
+	#leaderboard .row_main .item_leader .item_leader_left
+		margin: 0 auto
+		max-width: 100%
+		padding: 35px
+	#leaderboard .row_main .item_leader .item_leader_center
+		text-align: center
+		padding-top: 10px
+		padding-right: 0
+	#leaderboard .row_main .item_leader .item_leader_center p
+		max-width: 230px
+		margin: 0 auto
+	#leaderboard .row_main .item_leader .item_leader_center .vote_details
+		left: 50%
+		transform: translateX(-50%)
+		text-align: center
+		top: 70%
+	.item_leader_right
+		padding: 0 15px
+		border-left: none
+		border-bottom: 3px solid #5086f2
+		margin-top: 0
+	.row_main_items
+		max-width: 300px
+		margin: 0 auto
+	.counter_new
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+	.counter_new_two
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+	.counter_new_three
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+	.counter_new_four
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+	.counter_new_fifth
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+	.counter_new_six
+		border-color: transparent #fff transparent transparent
+		box-shadow: 5px -12px 14px -5px rgba(225,227,227,1)
+		span
+			color: #000
+
+
+
+	.col_fix_margin
+		margin: 10px 0
+
+@media only screen and (max-width: 525px)
+	#leaderboard .row_main
+		padding: 20px 0
+
+@import "../css/media"
+
+
+
+
+

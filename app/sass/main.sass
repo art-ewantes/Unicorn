@@ -656,7 +656,7 @@ section
 	background-position: center center
 	transform: skewY(-3deg)
 	z-index: 10
-	padding: 40px 0 130px
+	padding: 40px 0 180px
 	overflow: hidden				
 	.fixed_deg
 		max-width: 1000px
@@ -702,6 +702,7 @@ section
 		float: left
 		max-width: 476px
 		padding-right: 20px
+		+animation-delay(.6s)
 	.nomitate_item_bottom
 		text-align: left
 		display: inline-block
@@ -709,6 +710,8 @@ section
 		float: right
 		max-width: 476px
 		padding-right: 20px
+		+animation-delay(.6s)
+
 
 .fixed__deg
 	transform: skewY(3deg)
@@ -800,7 +803,7 @@ section
 	background-size: 100% 100%
 	background-position: center center
 	transform: skewY(3deg)
-	margin-top: -70px
+	margin-top: -110px
 	z-index: 10
 	padding: 100px 0 130px
 	overflow: hidden
@@ -833,7 +836,7 @@ section
 			height: auto
 			display: inline-block
 		span
-			display: inline-block
+			display: block
 			height: auto
 			font-size: em(22px)
 			font-family: "Exo2Bold"
@@ -912,12 +915,20 @@ section
 				width: 215px
 				height: auto
 				background-color: #fff
-				padding: 20px
+				padding: 10px 0 10px 15px
 				margin: 0 auto
 				text-align: left
 				font-family: "Exo2SemiBold"
 				font-size: em(22px)
 				border: 1px solid #e1e3e3
+				.fa
+					font-size: em(12px)
+					display: block
+					color: #999999
+					span
+						font-size: em(14em)
+						font-family: "MavenProRegular"
+						padding-left: 5px
 		.vote_details
 			text-align: center
 			// font-size: em(20px)
@@ -926,7 +937,7 @@ section
 			a
 				display: inline-block
 				transform: skewX(-12deg)
-				border: 1px solid black
+				border: 1px solid #000
 				padding: 5px 15px
 				font-size: em(16px)
 				font-family: "Exo2Medium"
@@ -1416,6 +1427,41 @@ section
 	.fixed_deg
 		transform: skewY(-3deg)
 		text-align: left
+		h2
+			color: $dark_blue
+			font-family: "Exo2Light"
+			position: relative
+		.followers
+			display: inline-block
+			position: absolute
+			right: 0
+			bottom: 0
+			.item_w
+				width: 34px
+				height: 34px
+				vertical-align: middle
+				border-radius: 50%
+				background-color: #d3d5dc
+				text-align: center
+				display: inline-block
+				.fa
+					display: inline-block
+					vertical-align: middle
+					color: #fff
+					font-size: em(16px)
+					line-height: 34px
+			.item_e
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px
+				span
+					display: block
+					vertical-align: middle
+				a
+					display: block
+					vertical-align: middle
+
+
 
 // addaptive_table
 // /* ------------- Контейнер с адаптивными блоками-------------
@@ -1424,6 +1470,7 @@ section
   margin: 1.5em 0
   padding: 0
   column-gap: 0em
+  background-color: #000
   // /* Общее расстояние между колонками
   font-size: .85em
   // -moz-column-gap: 1.5em
@@ -1562,11 +1609,50 @@ section
 
 
 
+.copirating
+	width: 100%
+	height: auto
+	padding: 30px 0
+	text-align: center
+	position: relative
+	span
+		&:nth-child(1)
+			font-size: em(15px)
+			color: #808080
+			font-family: "MavenProRegular"
+			margin-right: 10px
+		&:nth-child(2)
+			font-size: em(15px)
+			color: #404040
+			font-family: "MavenProBold"
+.back_to_top
+	width: auto
+	height: auto
+	position: absolute
+	right: 0
+	.animated
+		visibility: visible
+	.fa
+		font-size: em(24px)
+		color: #999999
+		
+
+.animated
+	visibility: hidden
 
 
-
-
-
+.fadeInUp,
+.fadeInDown,
+.fadeInRight,
+.pulse,
+.flipInX,
+.flipInY,
+.zoomIn,
+.fadeInLeft,
+.rollIn,
+.rotateIn,
+.flip
+	visibility: visible
 
 
 
@@ -1591,30 +1677,47 @@ section
 		-moz-column-count: 2
 		-webkit-column-count: 2
 		column-count: 2
-	#instagram .fixed_deg
-		text-align: center
+	// #instagram .fixed_deg
+	// 	text-align: center
 @media only screen and (min-width: 700px)
 	.masonry
-		-moz-column-count: 2
-		-webkit-column-count: 2
-		column-count: 2
+		-moz-column-count: 1
+		-webkit-column-count: 1
+		column-count: 1
 		text-align: center
-	#instagram .fixed_deg
-		text-align: center
+	// #instagram .fixed_deg
+	// 	text-align: center
 	
 
 @media only screen and (min-width: 900px)
   .masonry
-    -moz-column-count: 2
-    -webkit-column-count: 2
-    column-count: 2
+    -moz-column-count: 1
+    -webkit-column-count: 1
+    column-count: 1
+
+@media only screen and (min-width: 1000px)
+  .masonry
+    -moz-column-count: 1
+    -webkit-column-count: 1
+    column-count: 1
+
+@media only screen and (min-width: 1050px)
+  .masonry
+    -moz-column-count: 1
+    -webkit-column-count: 1
+    column-count: 1
 
 @media only screen and (min-width: 1100px)
+  .masonry
+    -moz-column-count: 1
+    -webkit-column-count: 1
+    column-count: 1
+
+@media only screen and (min-width: 1200px)
   .masonry
     -moz-column-count: 5
     -webkit-column-count: 5
     column-count: 5
-
 @media only screen and (min-width: 1280px)
   .wrapper
     width: 1260px

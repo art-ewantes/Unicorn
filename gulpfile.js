@@ -27,9 +27,7 @@ gulp.task("scripts", function(){
 		"app/libs/magnific-popup/dist/jquery.magnific-popup.min.js",
 		"app/libs/html5shiv/dist/html5shiv.min.js",
 		"app/libs/parallax/deploy/parallax.min.js",
-		// "app/libs/animated/animated.js",
-
-		
+		"app/libs/animateNumber/jquery.animateNumber.min.js",
 		"app/libs/respond/dest/respond.min.js",
 		"app/libs/scroll2id/PageScroll2id.min.js",
 		"app/libs/owl.carousel/dist/owl.carousel.min.js",
@@ -88,6 +86,7 @@ gulp.task("build", ["clean", "img", "sass", "scripts"], function(){
 	var buildCss = gulp.src([
 		"app/css/main.css",
 		"app/css/libs.min.css",
+		"app/css/leader.css",
 	])
 	.pipe(gulp.dest("dist/css"));
 
