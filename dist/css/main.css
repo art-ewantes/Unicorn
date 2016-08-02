@@ -330,6 +330,8 @@ p {
       font-family: "Exo2SemiBold";
       color: #fff;
       margin: 0 11px; }
+    .nav__ .navbar-inverse .navbar-nav > li > .active {
+      color: #bbd2ff; }
 
 .nominate {
   background-color: #5086f2;

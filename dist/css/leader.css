@@ -321,6 +321,8 @@ header {
       font-family: "Exo2SemiBold";
       color: #fff;
       margin: 0 11px; }
+    .nav__ .navbar-inverse .navbar-nav > li > .active {
+      color: #bbd2ff; }
 
 .nominate {
   background-color: #5086f2;
@@ -888,7 +890,7 @@ section p {
     color: #fff;
     font-family: "Exo2ExtraBoldItalic"; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   #leaderboard .row_main .item_leader .item_leader_left {
     margin: 0 auto;
     max-width: 100%;

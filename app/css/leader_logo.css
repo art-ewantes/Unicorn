@@ -592,20 +592,22 @@ section p {
       background-color: #fff;
       height: 100%; }
       #leaderboard .row_main .item_leader .__two {
-        background-color: #6377f7; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .__one {
-        background-color: #1f8cba; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .__three {
-        background-color: #746ff7; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .__four {
-        background-color: #8b69fa; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .__fifth {
-        background-color: #a160fc; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .__six {
-        background-color: #b048fa; }
+        background-color: transparent; }
       #leaderboard .row_main .item_leader .item_leader_left {
-        padding: 20px;
         max-width: 240px; }
+        #leaderboard .row_main .item_leader .item_leader_left img {
+          width: 100%;
+          min-height: 100%; }
         #leaderboard .row_main .item_leader .item_leader_left h4 {
           font-size: 1.9375em;
           font-family: "Exo2Light";
@@ -629,17 +631,30 @@ section p {
       #leaderboard .row_main .item_leader .item_leader_center {
         width: 100%;
         height: auto;
-        padding-top: 35px;
+        padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 20px;
         min-height: 220px;
         position: relative; }
+        #leaderboard .row_main .item_leader .item_leader_center h4 {
+          display: inline-block;
+          margin-bottom: 0; }
+        #leaderboard .row_main .item_leader .item_leader_center .iner_inline {
+          display: inline-block; }
+          #leaderboard .row_main .item_leader .item_leader_center .iner_inline .fa {
+            color: #5086f2; }
+          #leaderboard .row_main .item_leader .item_leader_center .iner_inline span {
+            color: #999999; }
+        #leaderboard .row_main .item_leader .item_leader_center .__iner {
+          color: #999999;
+          margin-bottom: 5px; }
         #leaderboard .row_main .item_leader .item_leader_center p {
           font-family: "MavenProRegular";
           font-size: 1em;
           text-align: left;
           color: #545454;
-          max-width: 190px; }
+          max-width: 190px;
+          margin: 0; }
         #leaderboard .row_main .item_leader .item_leader_center a {
           font-size: 1em;
           font-family: "MavenProRegular";
@@ -687,8 +702,7 @@ section p {
 .item_leader_right {
   width: 100%;
   height: auto;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 35px;
   padding-right: 30px;
   padding-left: 15px;
   border-left: 3px solid #5086f2; }
@@ -913,46 +927,11 @@ section p {
     padding: 0 15px;
     border-left: none;
     border-bottom: 3px solid #5086f2;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 30px; }
   .row_main_items {
     max-width: 300px;
     margin: 0 auto; }
-  .counter_new {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new span {
-      color: #000; }
-  .counter_new_two {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new_two span {
-      color: #000; }
-  .counter_new_three {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new_three span {
-      color: #000; }
-  .counter_new_four {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new_four span {
-      color: #000; }
-  .counter_new_fifth {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new_fifth span {
-      color: #000; }
-  .counter_new_six {
-    border-color: transparent #fff transparent transparent;
-    -webkit-box-shadow: 5px -12px 14px -5px #e1e3e3;
-            box-shadow: 5px -12px 14px -5px #e1e3e3; }
-    .counter_new_six span {
-      color: #000; }
   .col_fix_margin {
     margin: 10px 0; } }
 

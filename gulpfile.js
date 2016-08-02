@@ -87,6 +87,8 @@ gulp.task("build", ["clean", "img", "sass", "scripts"], function(){
 		"app/css/main.css",
 		"app/css/libs.min.css",
 		"app/css/leader.css",
+		"app/css/leader_logo.css",
+		"app/css/about.css",
 	])
 	.pipe(gulp.dest("dist/css"));
 
